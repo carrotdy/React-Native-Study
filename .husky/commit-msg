@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# 커밋 메시지 가져오기
+commit_message=$(cat "$1")
+
+# 정규식 패턴 정의 (간단한 형식 검사)
+pattern="^(feat|fix|docs|style|refactor|test|chore|build): .+"
+
+# 커밋 메시지 패턴 검사
+if [[ ! $commit_message =~ $pattern ]]; then
+  echo "⛔ 커밋 메시지 형식이 올바르지 않습니다."
+  echo "올바른 형식: <type>: <message> (예: feat: add new login functionality)"
+  exit 1
+fi
