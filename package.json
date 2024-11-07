@@ -5,8 +5,10 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "prepare": "husky install",
+    "prettier": "prettier --check ./src",
+    "prettier:fix": "prettier --write ./src",
     "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint src/ --ext .js,.jsx,.ts,.tsx --cache --fix",
     "format": "prettier --write .",
     "start": "react-native start",
     "test": "jest"
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@babel/plugin-proposal-decorators": "^7.25.9",
     "@babel/preset-env": "^7.25.3",
     "@babel/runtime": "^7.25.0",
     "@commitlint/cli": "^19.5.0",
@@ -35,6 +38,7 @@
     "@types/react": "^18.3.12",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
+    "babel-plugin-module-resolver": "^5.0.2",
     "eslint": "^8.56.0",
     "eslint-plugin-check-file": "^2.8.0",
     "eslint-plugin-jest": "^28.8.3",
@@ -50,6 +54,7 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "react-test-renderer": "18.3.1",
+    "twrnc": "^4.5.1",
     "typescript": "^5.0.4",
     "typescript-eslint": "^8.13.0"
   },
