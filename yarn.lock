@@ -9230,6 +9230,7 @@ __metadata:
     react: 18.3.1
     react-native: 0.76.1
     react-test-renderer: 18.3.1
+    tailwindcss: ^3.4.13
     twrnc: ^4.5.1
     typescript: ^5.0.4
     typescript-eslint: ^8.13.0
@@ -10267,7 +10268,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:>=2.0.0":
+"tailwindcss@npm:>=2.0.0, tailwindcss@npm:^3.4.13":
   version: 3.4.14
   resolution: "tailwindcss@npm:3.4.14"
   dependencies:

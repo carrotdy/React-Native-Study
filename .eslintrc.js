@@ -48,6 +48,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error', // Hooks 사용 규칙 적용
     'react-hooks/exhaustive-deps': 'warn', // useEffect 의존성 배열 검사
     'check-file/no-index': 'off', // index 파일 사용 허용
+    '@typescript-eslint/no-var-requires': 'off',
     'check-file/folder-naming-convention': [
       'error',
       {
