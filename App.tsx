@@ -1,11 +1,14 @@
-import tw from '@/shared/styles/tw';
-import { Text, View } from 'react-native';
+import RootNavigation from '@/navigation';
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const App = () => {
   return (
-    <View>
-      <Text style={tw`text-[20px] font-bold`}>hello world</Text>
-    </View>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <RootNavigation />
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 };
 
