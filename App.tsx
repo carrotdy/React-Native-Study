@@ -1,10 +1,10 @@
-import {View, Text} from 'react-native';
-import React from 'react';
+import tw from '@/shared/styles/tw';
+import { Text, View } from 'react-native';
 
 const App = () => {
   return (
     <View>
-      <Text>hello world</Text>
+      <Text style={tw`text-[20px] font-bold`}>hello world</Text>
     </View>
   );
 };
